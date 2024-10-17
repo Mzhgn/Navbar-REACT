@@ -10,9 +10,15 @@ function App() {
   console.log({ ...allProducts[0] });
   return (
     <div className="container">
-      <Product {...allProducts[0]} />
-      <Product {...allProducts[1]} />
-      <Product {...allProducts[2]} />
+      <Product {...allProducts[0]}>
+        <button>OFF 25%</button>
+      </Product>
+      <Product {...allProducts[1]}>
+        <button>OFF 10%</button>
+      </Product>
+      <Product {...allProducts[2]}>
+        <button>OFF 6%</button>
+      </Product>
     </div>
   );
 }
