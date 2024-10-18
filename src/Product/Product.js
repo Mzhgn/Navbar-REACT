@@ -9,6 +9,7 @@ function Product({ name, image, price, children }) {
         <h1>{name}</h1>
         <p className="price">${price}</p>
         {children}
+
         <p>
           <button>Add to Cart</button>
         </p>
